@@ -1,0 +1,12 @@
+body {
+  background-color: #111;
+}
+
+main {
+  width: 780px;
+  height: 100%;
+}
+
+.txt-left {
+  text-align: left;
+}
