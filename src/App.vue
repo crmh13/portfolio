@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <router-view/>
+    <main>
+      <router-view/>
+    </main>
     <nav>
       <ul>
-        <li>ステータス</li>
-        <li>しごと</li>
-        <li>せいさく</li>
+        <li><router-link to="/status">ステータス</router-link></li>
+        <li><router-link to="/work">しごと</router-link></li>
+        <li><router-link to="/create">せいさく</router-link></li>
       </ul>
       <div>
         <p class="txt-left">TIME</p>
@@ -39,24 +41,24 @@ export default {
   display: flex;
 }
 
-ul {
+nav ul {
   margin: 0;
   height: 600px;
   border-top: 5px solid #fff;
   border-left: 5px solid #fff;
   border-bottom: 5px solid #fff;
   border-radius: 5px 0 0 5px;
-  padding-top: 15px;
+  padding: 15px;
 }
-ul li {
+nav ul li {
   list-style-type: none;
   text-align: left;
   font-size: 20px;
-  padding: 5px 0;
+  padding: 5px;
 }
 
 nav {
-  width: 180px;
+  width: 160px;
   top: 0;
   right: 0;
 }
@@ -69,5 +71,16 @@ nav div {
 }
 nav div p {
   margin: 5px;
+}
+
+a {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 </style>

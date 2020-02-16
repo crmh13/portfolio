@@ -3,10 +3,14 @@ body {
 }
 
 main {
-  width: 780px;
+  width: 800px;
   height: 100%;
 }
 
 .txt-left {
   text-align: left;
+}
+
+p {
+  margin: 0;
 }
