@@ -1,7 +1,5 @@
 <template>
-  <main>
-    <h1>Port Folio</h1>
-  </main>
+  <h1>Port Folio</h1>
 </template>
 
 <script>
