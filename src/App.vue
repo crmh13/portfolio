@@ -11,7 +11,7 @@
       </ul>
       <div>
         <p class="txt-left">TIME</p>
-        <p id="time">00:00</p>
+        <p id="time">{{ clock }}</p>
       </div>
     </nav>
   </div>
@@ -20,7 +20,29 @@
 <script>
 import "./styles/common.css"
 export default {
-  name: 'App'
+  name: 'App',
+  data: function() {
+    return {
+      time: new Date()
+    }
+  },
+  computed: {
+    clock: function() {
+      const hh = this.time.getHours()
+      const mm = this.time.getMinutes()
+      return hh + ':' + mm
+    }
+  },
+  methods: {
+    clockAdvance: function() {
+      this.time = new Date()
+      const self = this
+      setTimeout(() => { self.clockAdvance() }, 1000)
+    }
+  },
+  created: function() {
+    this.clockAdvance()
+  }
 }
 </script>
 
