@@ -1,6 +1,6 @@
 <template>
   <article>
-    <div v-for="create in creates" :key="create.id" class="thumbnail" @click="open(create.id)">
+    <div v-for="create in creates" :key="create.id" class="thumbnail select" @click="open(create.id)">
       <img :src="create.img" :alt="create.title">
       <p>{{ create.title }}</p>
     </div>
@@ -78,9 +78,5 @@ article div {
 .thumbnail img {
   width: 150px;
   height: 113px;
-}
-
-.thumbnail:hover {
-  background: rgba(255, 255, 255, 0.2);
 }
 </style>

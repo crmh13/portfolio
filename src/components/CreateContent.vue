@@ -1,11 +1,13 @@
 <template>
-  <div class="content" v-show="id !== null">
-    <h2>{{ title }}</h2>
-    <img :src="img" :alt="title">
-    <p>{{ content }}</p>
-    <p v-if="url !== ''"><a :href="url" target="_blank">{{ url }}</a></p>
-    <p class="close" @click="close">閉じる</p>
-  </div>
+  <transition name="modal">
+    <div class="content" v-if="id !== null">
+      <h2>{{ title }}</h2>
+      <img :src="img" :alt="title">
+      <p>{{ content }}</p>
+      <p v-if="url !== ''"><a :href="url" target="_blank">{{ url }}</a></p>
+      <p class="close" @click="close">閉じる</p>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -47,5 +49,20 @@ export default {
 
 a {
   display: inline;
+}
+
+a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.modal-enter-active, .modal-leave-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.modal-enter, .modal-leave-to {
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.5s, transform 0.5s;
 }
 </style>

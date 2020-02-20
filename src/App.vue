@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <main>
-      <router-view/>
+      <transition name="page" mode="out-in">
+        <router-view/>
+      </transition>
     </main>
     <nav>
       <ul>
-        <li><router-link to="/status">ステータス</router-link></li>
-        <li><router-link to="/work">しごと</router-link></li>
-        <li><router-link to="/create">せいさく</router-link></li>
+        <li class="select"><router-link to="/status">ステータス</router-link></li>
+        <li class="select"><router-link to="/work">しごと</router-link></li>
+        <li class="select"><router-link to="/create">せいさく</router-link></li>
       </ul>
       <div>
         <p class="txt-left">TIME</p>
@@ -28,8 +30,8 @@ export default {
   },
   computed: {
     clock: function() {
-      const hh = this.time.getHours()
-      const mm = this.time.getMinutes()
+      const hh = ("0" + this.time.getHours()).slice(-2)
+      const mm = ("0" + this.time.getMinutes()).slice(-2)
       return hh + ':' + mm
     }
   },
@@ -102,7 +104,16 @@ a {
   text-decoration: none;
   display: block;
 }
-a:hover {
-  background: rgba(255, 255, 255, 0.2);
+
+.page-enter-active, .page-leave-active {
+  transition: transform 0.5s;
+}
+
+.page-enter {
+  transform: translateX(800px);
+}
+
+.page-leave-to {
+  transform: translateX(-800px);
 }
 </style>

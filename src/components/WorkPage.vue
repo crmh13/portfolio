@@ -4,7 +4,8 @@
       <ul>
         <li v-for="workList in workLists" :key="workList.id" 
           :class="{'active': workId === workList.id}"
-          @click="select(workList.id)">{{ workList.work }}</li>
+          @click="select(workList.id)"
+          class="select">{{ workList.work }}</li>
       </ul>
       <div v-if="workId !== null" class="content">
         <p>{{ workLists[workId].content }}</p>
@@ -64,10 +65,6 @@ ul {
 ul li {
   padding: 5px;
   cursor: pointer;
-}
-
-ul li:hover {
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .active {

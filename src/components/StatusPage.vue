@@ -6,8 +6,8 @@
   </div>
   <article>
     <ul class="type">
-      <li @click="change('language')" :class="{'active': isActive === 'language'}">げんご</li>
-      <li @click="change('framework')" :class="{'active': isActive === 'framework'}">フレームワーク</li>
+      <li @click="change('language')" :class="{'active': isActive === 'language'}" class="select">げんご</li>
+      <li @click="change('framework')" :class="{'active': isActive === 'framework'}" class="select">フレームワーク</li>
     </ul>
     <ul v-if="isActive === 'language'" class="skill">
       <li v-for="(language, index) in  languages" :key="index">{{ language }}</li>
@@ -90,10 +90,6 @@ article li {
   width: 200px;
   text-align: center;
   cursor: pointer;
-}
-
-.type li:hover {
-  background: rgba(255, 255, 255, 0.2);
 }
 
 .active {
