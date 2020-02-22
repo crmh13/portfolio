@@ -106,4 +106,43 @@ article li {
   margin-top: 15px;
 }
 
+
+@media screen and (max-width: 960px) {
+  .status {
+    display: block;
+  }
+
+  .profile {
+    width: 95.5%;
+    height: 100%;
+    border-left: 5px solid #fff;
+  }
+
+  article {
+    width: 97%;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .profile {
+    width: 100%;
+  }
+
+  .profile p {
+    padding: 5px;
+  }
+
+  article {
+    width: 100%;
+  }
+  
+  .type {
+    padding: 5px 0;
+  }
+
+  .type li {
+    width: 45%;
+  }
+}
 </style>

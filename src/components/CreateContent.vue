@@ -65,4 +65,20 @@ a:hover {
   transform: scale(0);
   transition: opacity 0.5s, transform 0.5s;
 }
+
+
+@media screen and (max-width: 960px) {
+  .content {
+    width: 70%;
+    position: absolute;
+    height: 560px;
+    top:0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .content img {
+    width: 90%;
+  }
+}
 </style>

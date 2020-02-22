@@ -81,4 +81,25 @@ ul li {
   white-space: pre-wrap;
   margin: 10px;
 }
+
+@media screen and (max-width: 960px) {
+  ul {
+    width: 20%;
+  }
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  article {
+    display: block;
+  }
+
+  ul {
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #fff;
+  }
+}
 </style>
