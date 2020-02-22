@@ -27,4 +27,10 @@ li {
 a {
   color: #42b983;
 }
+
+@media screen and (max-width: 780px) {
+  h1 {
+    line-height: 300px;
+  }
+}
 </style>
