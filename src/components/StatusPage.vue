@@ -2,7 +2,7 @@
 <div class="status">
   <div class="profile">
     <p>HTMl、CSSを使い官公庁のHPのアクセシビリティ対応、保守業務を行いながらプログラミングを独学で学びプログラマになる。</p>
-    <p>ゲームとプログラミングが好き。<br>VRゲームやり始め、いずれVRでも何かを作りたい。</p>
+    <p>ゲームとプログラミングが好き。<br>VRゲームをやり始め、いずれVRでも何かを作りたい。</p>
   </div>
   <article>
     <ul class="type">
