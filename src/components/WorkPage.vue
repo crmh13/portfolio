@@ -2,10 +2,10 @@
   <div>
     <article>
       <ul>
-        <li v-for="workList in workLists" :key="workList.id" 
-          :class="{'active': workId === workList.id}"
-          @click="select(workList.id)"
-          class="select">{{ workList.work }}</li>
+        <li v-for="(workList, index) in workLists" :key="workList.id" 
+          :class="{'active': workId === index}">
+          <a href="#" @click.prevent="select(index)" class="select">{{ workList.work }}</a>
+        </li>
       </ul>
       <div v-if="workId !== null" class="content">
         <p>{{ workLists[workId].content }}</p>

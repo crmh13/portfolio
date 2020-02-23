@@ -14,7 +14,8 @@ import "./styles/common.css"
 import NavigationBar from './components/NavigationBar'
 export default {
   name: 'App',
-  components: { NavigationBar },}
+  components: { NavigationBar }
+}
 </script>
 
 <style>

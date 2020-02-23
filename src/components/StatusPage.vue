@@ -6,8 +6,8 @@
   </div>
   <article>
     <ul class="type">
-      <li @click="change('language')" :class="{'active': isActive === 'language'}" class="select">げんご</li>
-      <li @click="change('framework')" :class="{'active': isActive === 'framework'}" class="select">フレームワーク</li>
+      <li :class="{'active': isActive === 'language'}"><a href="#" @click.prevent="change('language')" class="select">げんご</a></li>
+      <li :class="{'active': isActive === 'framework'}"><a href="#" @click.prevent="change('framework')" class="select">フレームワーク</a></li>
     </ul>
     <ul v-if="isActive === 'language'" class="skill">
       <li v-for="(language, index) in  languages" :key="index">{{ language }}</li>

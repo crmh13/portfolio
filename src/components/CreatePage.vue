@@ -1,8 +1,10 @@
 <template>
   <article>
-    <div v-for="create in creates" :key="create.id" class="thumbnail select" @click="open(create.id)">
-      <img :src="create.img" :alt="create.title">
-      <p>{{ create.title }}</p>
+    <div v-for="(create, index) in creates" :key="create.id">
+      <a href="#" class="thumbnail select" @click.prevent="open(index)">
+        <img :src="create.img" :alt="create.title">
+        <p>{{ create.title }}</p>
+      </a>
     </div>
     <CreateContent :id="id" :title="title" :img="img" :content="content" :url="url" @close="close" />
   </article>
