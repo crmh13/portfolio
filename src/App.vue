@@ -10,6 +10,7 @@
         <li class="select"><router-link to="/status">ステータス</router-link></li>
         <li class="select"><router-link to="/work">しごと</router-link></li>
         <li class="select"><router-link to="/create">せいさく</router-link></li>
+        <li class="select"><router-link to="/contact">といあわせ</router-link></li>
       </ul>
       <div>
         <p class="txt-left">TIME</p>
