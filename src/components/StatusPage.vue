@@ -2,12 +2,12 @@
 <div class="status">
   <div class="profile">
     <p>HTMl、CSSを使い官公庁のHPのアクセシビリティ対応、保守業務を行いながらプログラミングを独学で学びプログラマになる。</p>
-    <p>ゲームとプログラミングが好き。<br>VRゲームやり始め、いずれVRでも何かを作りたい。</p>
+    <p>ゲームとプログラミングが好き。<br>VRゲームをやり始め、いずれVRでも何かを作りたい。</p>
   </div>
   <article>
     <ul class="type">
-      <li @click="change('language')" :class="{'active': isActive === 'language'}" class="select">げんご</li>
-      <li @click="change('framework')" :class="{'active': isActive === 'framework'}" class="select">フレームワーク</li>
+      <li :class="{'active': isActive === 'language'}"><a href="#" @click.prevent="change('language')" class="select">げんご</a></li>
+      <li :class="{'active': isActive === 'framework'}"><a href="#" @click.prevent="change('framework')" class="select">フレームワーク</a></li>
     </ul>
     <ul v-if="isActive === 'language'" class="skill">
       <li v-for="(language, index) in  languages" :key="index">{{ language }}</li>
