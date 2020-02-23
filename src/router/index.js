@@ -4,6 +4,7 @@ import TopPage from '@/components/TopPage'
 import StatusPage from '@/components/StatusPage'
 import WorkPage from '@/components/WorkPage'
 import CreatePage from '@/components/CreatePage'
+import ContactPage from '@/components/ContactPage'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/create',
       name: 'CreatePage',
       component: CreatePage
+    },
+    {
+      path: '/contact',
+      name: 'ContactPage',
+      component: ContactPage
     }
   ],
   mode: 'history'

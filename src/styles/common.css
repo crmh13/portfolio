@@ -121,6 +121,7 @@ nav div p {
   }
   nav ul li {
     display: inline-block;
+    font-size: 14px;
   }
   nav div {
     border-right: 5px solid #fff;
