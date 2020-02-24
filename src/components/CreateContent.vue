@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 .content {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   width: 600px;
   height: 550px;
@@ -49,6 +49,7 @@ export default {
 
 a {
   display: inline;
+  word-wrap: break-word;
 }
 
 a:hover {
@@ -71,7 +72,7 @@ a:hover {
   .content {
     width: 70%;
     position: absolute;
-    height: 560px;
+    height: 90%;
     top:0;
   }
 }
