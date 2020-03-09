@@ -5,6 +5,7 @@
       <img :src="img" :alt="title">
       <p>{{ content }}</p>
       <p v-if="url !== ''"><a :href="url" target="_blank">{{ url }}</a></p>
+      <p v-if="id === 2">ログインなし、データ保存なしのサンプルはこちら<br><a href="https://laughing-morse-da3d2d.netlify.com/" target="_blank">https://laughing-morse-da3d2d.netlify.com/</a>
       <p class="close" @click="close">閉じる</p>
     </div>
   </transition>

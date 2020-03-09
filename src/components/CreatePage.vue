@@ -30,6 +30,13 @@ export default {
           img: '/static/todoapp.png',
           content: `Todoアプリです。\nRuby On Railsを使用し、予定日にメール通知ができるようにしています。\nテストユーザーのログイン情報\n ユーザー名：テストユーザー\nパスワード：test123`,
           url: 'https://nfvsxpqbegwp.herokuapp.com/'
+        },
+        {
+          id: 2,
+          title: 'カレンダーアプリ',
+          img: '/static/calendar.png',
+          content: `カレンダーアプリです。\nVue.jsとmoment.jsを使用しFirebaseでデプロイ。\nGoogleアカウントでログインし、Firestoreを使用してデータを保存しています。`,
+          url: 'https://calendar-app-83121.firebaseapp.com/'
         }
       ],
       id: null,
