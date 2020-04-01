@@ -39,7 +39,7 @@ export default {
       frameworks: [
         'Ruby On Rails',
         'Vue.js',
-        'Nuxt.js(少し触っただけ)'
+        'Nuxt.js'
       ],
       isActive: 'language'
     }
