@@ -28,6 +28,7 @@ export default {
         'HTML',
         'CSS',
         'JavaScript',
+        'TypeScript',
         'Ruby',
         'PHP',
         'Java',
