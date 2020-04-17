@@ -29,6 +29,7 @@ export default {
         'CSS',
         'JavaScript',
         'TypeScript',
+        'Node.js',
         'Ruby',
         'PHP',
         'Java',
@@ -40,7 +41,8 @@ export default {
       frameworks: [
         'Ruby On Rails',
         'Vue.js',
-        'Nuxt.js'
+        'Nuxt.js',
+        'Express'
       ],
       isActive: 'language'
     }
